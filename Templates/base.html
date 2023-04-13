@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/normalize.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body id="bodyhome">
+    <nav class="nav"> <img src="{{ url_for('static', filename= 'Imagens/logo.png') }}" alt="Logo unes" id="logo">
+        <div class="nav-links">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/sobrenos">Quem Somos</a>
+            <a class="nav-link" href="/contatos">Contatos</a>
+        </div>
+    </nav>
+    {% block conteudo %}
+
+    {% endblock %}
+    <p class="content-rights">Todos os direitos reservados</p>
+</body>
+</html>
