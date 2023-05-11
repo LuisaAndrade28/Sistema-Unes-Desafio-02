@@ -5,13 +5,27 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, ratione autem. Optio, quod repellat. Sed, ipsa. Optio earum odit animi.</p>
     </div>
     <hr>
-    <form class="contact-form">
-        <label> Seu email:</label>
-        <input type="text" />
-        <label>Assunto:</label>
-        <input type="text" />
-        <label>Descrição:</label>
-        <textarea></textarea>
-        <button type="submit">Enviar</button>
+    <form method="post" action="/contatos" class="contact-form">
+
+        <div class="email">
+            Seu e-mail: <br>
+            <input type="email" name="email" required><br>
+        </div>
+
+        <div class="assunto">
+            Assunto: <br>
+            <input type="text" name="assunto" required><br>
+        </div>
+
+        <div class="descricao">
+            Descrição: <br>
+            <input type="text" name="descricao" required><br>
+        </div>
+
+        <div class="btnn">
+            <input type="submit">
+        </div>
+
+
     </form>
     {% endblock %}
